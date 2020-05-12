@@ -1,0 +1,2 @@
+endpoint: http://localhost:4466/p1-self-relation-array/dev
+datamodel: datamodel.prisma

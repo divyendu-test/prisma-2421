@@ -1,0 +1,11 @@
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:prisma@localhost:3306/p1-self-relation-array@dev"
+}
+
+model User {
+  id     String @id
+  name   String
+  User_A User[] @relation("UserToUser", references: [id])
+  User_B User[] @relation("UserToUser", references: [id])
+}
